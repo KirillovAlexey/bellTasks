@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 
-public class Main {
+class Main {
 
     public static void main(String[] args) throws IOException {
         String taskNum = "";
@@ -22,15 +22,15 @@ public class Main {
             switch (taskNum) {
                 case ("1"): {
                     Task1 task1 = new Task1();
-                    task1.main(null);
+                    task1.main();
                     break;
                 }
                 case ("3"): {
-                    Task3 task3 = new Task3();
+                    new Task3();
                     break;
                 }
                 case ("4"): {
-                    Task4 task4 = new Task4();
+                    new Task4();
                     break;
                 }
                 case ("5"): {

@@ -12,7 +12,7 @@ public class MatrixClass implements MatrixInterface {
         return array;
     }
 
-    public String getNameMatrix() {
+    private String getNameMatrix() {
         return nameMatrix;
     }
 
@@ -29,7 +29,6 @@ public class MatrixClass implements MatrixInterface {
         }
     }
 
-    @Override
     public String findMinimalElement(int[][] array) {
         int min = array[0][n - 1];
         for (int i = 0; i < array.length; i++) {
@@ -40,12 +39,10 @@ public class MatrixClass implements MatrixInterface {
         return "Минимальный элемент побочной диагонали: " + min;
     }
 
-    @Override
     public void printNameMatrix() {
         System.out.println("Название матрицы: " + getNameMatrix());
     }
 
-    @Override
     public void printMatrix() {
         for (int[] arr : array) {
             for (int index : arr) {

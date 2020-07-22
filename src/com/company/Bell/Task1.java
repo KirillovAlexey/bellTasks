@@ -1,8 +1,8 @@
 package com.company.Bell;
 
-public class Task1 {
+class Task1 {
 
-    public void fun3() {
+    private void fun3() {
         int a = 3;
         int b;
         int c;
@@ -11,7 +11,7 @@ public class Task1 {
         System.out.println(a + "_" + b + "_" + c);
     }
 
-    public void main(String[] args) {
+    public void main() {
         fun3();
     }
 }
