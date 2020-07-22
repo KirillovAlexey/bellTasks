@@ -1,12 +1,20 @@
 package com.company.Bell;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Random;
 
 class Task3 {
-    private static final int n = 5;
+    private static int n;
     private static int[][] array;
 
-    Task3(){
+    Task3() {
+        System.out.println("Введите размер матрицы");
+        try {
+            n = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+        } catch (Exception e) {
+            e.getMessage();
+        }
         initMatrix();
         printMatrix(array);
         System.out.println("Минимальный элемент = " + findMinimal(array));

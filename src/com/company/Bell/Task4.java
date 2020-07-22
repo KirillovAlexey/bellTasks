@@ -7,7 +7,7 @@ import java.util.Random;
 class Task4 {
     private static ArrayList arrayList;
 
-    Task4(){
+    Task4() {
         initArray();
         System.out.println("Массив до переворачивания:");
         printArray();

@@ -1,10 +1,12 @@
 package com.company.Bell.Task5;
 
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Random;
 
 public class MatrixClass implements MatrixInterface {
 
-    final static int n = 5;
+    int n;
     int[][] array;
     private String nameMatrix;
 
@@ -21,6 +23,12 @@ public class MatrixClass implements MatrixInterface {
     }
 
     public MatrixClass() {
+        System.out.println("Введите размер матрицы");
+        try {
+            n = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+        } catch (Exception e) {
+            e.getMessage();
+        }
         array = new int[n][n];
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array[i].length; j++) {
